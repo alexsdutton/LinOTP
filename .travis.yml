@@ -1,0 +1,10 @@
+language: python
+python:
+  - "2.7"
+install:
+  - (cd linotpd/src && python setup.py install)
+  - pip install Pillow
+  - pip install codecov freezegun mock nose unittest2
+script: (cd linotpd/src && coverage run --source=linotp `which nosetests` --with-pylons=test.ini)
+after_success:
+  - codecov
