@@ -30,7 +30,6 @@ import os
 
 import base64
 import binascii
-import M2Crypto
 
 import datetime
 
@@ -626,6 +625,8 @@ def _verify_signature(pub_keys, lic_str, lic_sign):
     :param lic_sign: the license signature
     :return: None or the name of the key
     """
+    import M2Crypto
+
     ret = None
     # blacklisted signatures
     if base64.b64encode(lic_sign) in BLACK_SIGNATURES:
