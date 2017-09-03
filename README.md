@@ -1,6 +1,8 @@
 LinOTP
 ======
 
+[![Build Status](https://travis-ci.org/alexsdutton/linotp.svg?branch=master)](https://travis-ci.org/alexsdutton/linotp) [![codecov](https://codecov.io/gh/alexsdutton/linotp/branch/master/graph/badge.svg)](https://codecov.io/gh/alexsdutton/linotp)
+
 LinOTP - the Open Source solution for two factor authentication
   Copyright (C) 2010 - 2017 KeyIdentity GmbH
 
