@@ -7,4 +7,4 @@ install:
   - pip install codecov freezegun mock nose unittest2
 script: (cd linotpd/src && coverage run --source=linotp `which nosetests` --with-pylons=test.ini)
 after_success:
-  - codecov
+  - (cd linotpd/src && codecov)
